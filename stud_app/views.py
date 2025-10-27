@@ -7,7 +7,7 @@ from django.views.generic import View
 
 # create student 
 
-class CreateStudView(View):
+
 
     def get(self,request):
 
