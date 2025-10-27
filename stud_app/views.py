@@ -69,5 +69,16 @@ class UpdateView(View):
 
 # deleteview
 
+class DeleteView(View):
+     
+     def get(self,request):
+          
+          data = StudentModel.objects.get(id=1)
+
+          data.delete()
+
+          return render(request,"create_stud.html")
+          
+
 
          
