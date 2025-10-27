@@ -47,25 +47,6 @@ class UpdateView(View):
 
         return render(request,"update.html",{'data':data})
     
-    def post(self,request):
-
-            data = StudentModel.objects.get(id = 3)
-
-            print(request.POST)
-
-            data.name = request.POST.get('username')
-
-            data.email =  request.POST.get('email')
-
-            data.course = request.POST.get('course')
-
-            data.age =  request.POST.get('age')
-
-            data.save()
-
-            return render(request,"update.html")
-    
-
 
 # deleteview
 
